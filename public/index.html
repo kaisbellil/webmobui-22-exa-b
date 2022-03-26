@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Instacats</title>
+
+    <!-- Bloquer le viewport - ici, c'est une app! Pas de zoom. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+    <!-- Fonts google pour les icônes et la police par défaut -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" />
+
+    <!-- Stylesheet principale (main.css, car c'est le nom de sortie utilisé par Webpack) -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Lien vers le fichier manifest pour la PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Javascript principal (main.js, car c'est le nom de sortie utilisé par Webpack) -->
+    <!-- ...à quoi sert le defer ? :) -->
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- ajouter la classe "animated" à #logo pour animer l'icône -->
+      <div id="logo">
+        <img src="/images/logo_instacats.png" />
+        Instacats
+      </div>
+    </header>
+
+    <main>
+      <!-- ajouter la classe "active" à une section pour l'afficher -->
+      <!-- exemple : <section id="home-section" class="active"> -->
+
+      <!------------------------------------------------------------------------------------------------------------>
+
+      <section id="home-section" class="active">
+      </section>
+
+      <!------------------------------------------------------------------------------------------------------------>
+
+      <section id="posts-section">
+        <h4>Feed</h4>
+
+        <div class="post-list">
+          <article class="post-list-item">
+            <div class="post-list-item-header">
+              <a href="#" class="post-list-item-user">
+                <img src="http://placekitten.com/36/36" class="post-list-item-user-image"/>
+                <div class="post-list-item-user-name">
+                  Hello
+                </div>
+              </a>
+
+              <button type="button" class="icon-button like-button">
+                <span class="material-icons">favorite_border</span>
+              </button>
+            </div>
+
+            <a href="#" class="post-list-item-image-wrapper">
+              <img src="http://placekitten.com/600/600" />
+            </a>
+
+            <div class="post-list-item-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in tortor nec leo volutpat cursus. Fusce lorem enim, vehicula nec est vel, dignissim finibus turpis. Fusce id felis at mauris dictum pretium id in nisl. Quisque a dolor velit.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!------------------------------------------------------------------------------------------------------------>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="#home" class="active">
+          <span class="material-icons">home</span>
+          <span>Home</span>
+        </a>
+        <a href="#posts">
+          <span class="material-icons">dynamic_feed</span>
+          <span>Feed</span>
+        </a>
+        <a href="#likes">
+          <span class="material-icons">favorite</span>
+          <span>Likes</span>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
