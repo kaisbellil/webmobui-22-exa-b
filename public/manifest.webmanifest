@@ -1,6 +1,6 @@
 {
-  "short_name": "Spotlified",
-  "name": "Spotlified - Unleash the JS",
+  "short_name": "Instacats",
+  "name": "Instacats - Unleash the JS",
   "icons": [
     {
       "src": "/images/logo_instacats.png",
@@ -9,8 +9,8 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#121212",
+  "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#121212"
+  "theme_color": "#d6249f"
 }
