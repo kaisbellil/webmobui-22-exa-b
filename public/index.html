@@ -14,16 +14,11 @@
     <!-- Stylesheet principale (main.css, car c'est le nom de sortie utilisé par Webpack) -->
     <link rel="stylesheet" href="main.css" />
 
-    <!-- Lien vers le fichier manifest pour la PWA -->
-    <link rel="manifest" href="/manifest.webmanifest" />
-
     <!-- Javascript principal (main.js, car c'est le nom de sortie utilisé par Webpack) -->
-    <!-- ...à quoi sert le defer ? :) -->
     <script src="main.js" defer></script>
   </head>
   <body>
     <header>
-      <!-- ajouter la classe "animated" à #logo pour animer l'icône -->
       <div id="logo">
         <img src="/images/logo_instacats.png" />
         Instacats
@@ -31,12 +26,14 @@
     </header>
 
     <main>
-      <!-- ajouter la classe "active" à une section pour l'afficher -->
-      <!-- exemple : <section id="home-section" class="active"> -->
-
       <!------------------------------------------------------------------------------------------------------------>
 
       <section id="home-section" class="active">
+        <h1 class="hero">Bienvenue sur Instacats</h1>
+        <p class="caption">
+          As a leading European online platform for cat pictures an meows, we pleasse customers in
+          23 countries. In our cat accessories store, they can find a wide assortment from more than 5,800 brands.
+        </p>
       </section>
 
       <!------------------------------------------------------------------------------------------------------------>
@@ -47,22 +44,30 @@
         <div class="post-list">
           <article class="post-list-item">
             <div class="post-list-item-header">
-              <a href="#" class="post-list-item-user">
+              <!-- Utilisez ce <a> pour lier l'url de la page de l'utilisateur -->
+              <a href="#users-[id]" class="post-list-item-user">
+                <!-- Utilisez ce <img> pour lier l'image de l'utilisateur -->
                 <img src="http://placekitten.com/36/36" class="post-list-item-user-image"/>
+                <!-- Utilisez ce <div> pour afficher le nom de l'utilisateur -->
                 <div class="post-list-item-user-name">
                   Hello
                 </div>
               </a>
 
+              <!-- Utilisez ce bouton pour linker l'évent de l'ajout aux posts likés -->
               <button type="button" class="icon-button like-button">
+                <!-- Modifier cet icône pour montrer si le post est liké ou non. Son inverse est favorite -->
                 <span class="material-icons">favorite_border</span>
               </button>
             </div>
 
-            <a href="#" class="post-list-item-image-wrapper">
+            <!-- Utilisez ce <a> pour lier l'url de la page du post -->
+            <a href="#posts-[id]" class="post-list-item-image-wrapper">
+              <!-- Utilisez cette image pour afficher l'image du post -->
               <img src="http://placekitten.com/600/600" />
             </a>
 
+            <!-- Utilisez ce <div> pour afficher le contenu du post -->
             <div class="post-list-item-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in tortor nec leo volutpat cursus. Fusce lorem enim, vehicula nec est vel, dignissim finibus turpis. Fusce id felis at mauris dictum pretium id in nisl. Quisque a dolor velit.
             </div>
