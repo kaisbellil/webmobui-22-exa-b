@@ -48,3 +48,22 @@
   padding: 20px;
 }
 
+/*******************************************************************************/
+
+.cats-of-the-month-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cats-of-the-month-list .cats-of-the-month-list-item {
+  width: calc(33% - 20px);
+}
+
+.cats-of-the-month-list .cats-of-the-month-list-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
