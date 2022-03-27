@@ -165,3 +165,38 @@ footer nav a .material-icons {
     display: none;
   }
 }
+
+/********************************************************************************/
+
+.post-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  outline: none;
+  margin-bottom:  10px;
+}
+
+.post-user .post-user-image {
+  border-radius: 50%;
+}
+
+.post-user .post-user-name {
+  font-weight: bold;
+}
+
+.post-content{
+  margin-bottom: 10px;
+}
+
+.post-image-wrapper {
+  display: block;
+  height: 300px;
+}
+
+.post-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
